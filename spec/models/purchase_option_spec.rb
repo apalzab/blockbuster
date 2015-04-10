@@ -10,6 +10,7 @@ RSpec.describe PurchaseOption, :type => :model do
   it { should validate_presence_of(:quality) }
   it { should validate_presence_of(:price) }
 
+# Factories
   it "has a valid factory" do
     purchase_option = create(:purchase_option)
     expect(purchase_option).to be_valid

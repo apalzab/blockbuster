@@ -11,6 +11,7 @@ RSpec.describe Movie, :type => :model do
   it { should validate_uniqueness_of(:title) }
   it { should validate_presence_of(:plot) }
 
+# Factories
   it "has a valid factory" do
     movie = create(:movie)
     expect(movie).to be_valid
