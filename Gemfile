@@ -48,5 +48,6 @@ group :development, :test do
   gem 'launchy'
   gem 'selenium-webdriver'
   gem 'meta_request'
+  gem 'faker'
 end
 
