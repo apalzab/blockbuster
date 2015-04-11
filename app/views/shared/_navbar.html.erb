@@ -1,0 +1,7 @@
+<% if current_user %>
+  <%= link_to "My Purchases", purchases_path %>
+  <%= link_to "Close Session", destroy_user_session_path, method: :delete if current_user %>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path %>
+  <%= link_to "Log in", new_user_session_path %>
+<% end %>
