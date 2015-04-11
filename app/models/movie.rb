@@ -1,4 +1,6 @@
 class Movie < ActiveRecord::Base
+  extend FriendlyId
+  friendly_id :title, use: :slugged
 
 # Associations
   has_many :movie_purchase_options
@@ -6,5 +8,4 @@ class Movie < ActiveRecord::Base
 
 # Validations
   validates_presence_of :title, :plot
-  validates_uniqueness_of :title
 end

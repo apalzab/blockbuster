@@ -38,6 +38,9 @@ gem 'devise'
 # Responders to dry up Rails 4+ apps
 gem 'responders'
 
+# Friendly ids
+gem 'friendly_id', '~> 5.1.0'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
