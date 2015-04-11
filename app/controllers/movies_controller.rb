@@ -10,6 +10,7 @@ class MoviesController < ApplicationController
 
   def show
     @movie = Movie.find(params[:id])
+    @movie_purchase_options = @movie.movie_purchase_options
   end
 
 end

@@ -1,5 +1,6 @@
-<div>
+<section>
   <h1>Movie Description</h1>
   <p><%= @movie.plot %></p>
+  <%= render @movie_purchase_options %>
   <%= link_to "Back to movies", movies_path %>
-</div>
+</section>
