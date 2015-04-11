@@ -32,6 +32,15 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Puma as the app server
 gem 'puma'
 
+# User registration and log in
+gem 'devise'
+
+# Responders to dry up Rails 4+ apps
+gem 'responders'
+
+# Friendly ids
+gem 'friendly_id', '~> 5.1.0'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -48,5 +57,6 @@ group :development, :test do
   gem 'launchy'
   gem 'selenium-webdriver'
   gem 'meta_request'
+  gem 'faker'
 end
 
