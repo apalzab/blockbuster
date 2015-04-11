@@ -8,7 +8,9 @@
 </head>
 <body>
   <p class="notice"><%= notice %></p>
-  <p class="alert"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+  <%= link_to "Cerrar sesion", destroy_user_session_path, method: :delete if current_user %>
 
 <%= yield %>
 
