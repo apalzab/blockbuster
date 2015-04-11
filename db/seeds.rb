@@ -1,13 +1,13 @@
-# 200.times { Movie.create(title: 'The Lord of the rings', plot: 'sbjhdsjhjdsjdsl') }
+200.times { Movie.create(title: 'The Lord of the rings', plot: 'sbjhdsjhjdsjdsl') }
 
 # Movie
-movie1 = Movie.create(title: 'The Lord of the rings', plot: 'sbjhdsjhjdsjdsl')
+# movie1 = Movie.create(title: 'The Lord of the rings', plot: 'sbjhdsjhjdsjdsl')
 # movie2 = Movie.create(title: 'Batman', plot: 'sbjhdsjhjdsjdsl')
 # movie3 = Movie.create(title: 'Whatever works', plot: 'sbjhdsjhjdsjdsl')
 
 # # PurchaseOption
-p1 = PurchaseOption.create(quality: 'hd', price: 10)
-p2 = PurchaseOption.create(quality: 'sd', price: 5)
+# p1 = PurchaseOption.create(quality: 'hd', price: 10)
+# p2 = PurchaseOption.create(quality: 'sd', price: 5)
 
 # p3 = PurchaseOption.create(quality: 'hd', price: 20)
 # p4 = PurchaseOption.create(quality: 'sd', price: 10)
@@ -16,8 +16,8 @@ p2 = PurchaseOption.create(quality: 'sd', price: 5)
 # p6 = PurchaseOption.create(quality: 'sd', price: 20)
 
 # # MoviePurchaseOption
-mpo1 = MoviePurchaseOption.create(movie_id: movie1.id, purchase_option_id: p1.id)
-mpo2 = MoviePurchaseOption.create(movie_id: movie1.id, purchase_option_id: p2.id)
+# mpo1 = MoviePurchaseOption.create(movie_id: movie1.id, purchase_option_id: p1.id)
+# mpo2 = MoviePurchaseOption.create(movie_id: movie1.id, purchase_option_id: p2.id)
 
 # mpo3 = MoviePurchaseOption.create(movie_id: movie2.id, purchase_option_id: p3)
 # mpo4 = MoviePurchaseOption.create(movie_id: movie2.id, purchase_option_id: p4)

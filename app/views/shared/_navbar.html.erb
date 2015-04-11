@@ -1,3 +1,4 @@
+<%= link_to "Movies", movies_path %>
 <% if current_user %>
   <%= link_to "My Purchases", purchases_path %>
   <%= link_to "Close Session", destroy_user_session_path, method: :delete if current_user %>
