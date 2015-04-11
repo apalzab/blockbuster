@@ -9,6 +9,7 @@ RSpec.describe PurchaseOption, :type => :model do
 # Validations
   it { should validate_presence_of(:quality) }
   it { should validate_presence_of(:price) }
+  it { should validate_uniqueness_of(:quality).scoped_to(:price) }
 
 # Factories
   it "has a valid factory" do

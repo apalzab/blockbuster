@@ -6,4 +6,15 @@ class PurchaseOption < ActiveRecord::Base
 
 # Validations
   validates_presence_of :quality, :price
+  validates :quality, uniqueness: { scope: :price }
+
+# Callbacks
+  before_validation :parameterize_quality
+
+  private
+
+  def parameterize_quality
+    self.quality = self.quality.parameterize
+  end
+
 end
