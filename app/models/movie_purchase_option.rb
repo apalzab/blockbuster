@@ -14,6 +14,7 @@ class MoviePurchaseOption < ActiveRecord::Base
   private
 
   def set_price
+    return unless self.purchase_option # for testing purposes
     self.price = self.purchase_option.price
   end
 end
