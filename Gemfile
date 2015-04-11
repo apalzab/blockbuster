@@ -41,6 +41,13 @@ gem 'responders'
 # Friendly ids
 gem 'friendly_id', '~> 5.1.0'
 
+# For page pagination
+gem 'will_paginate'
+
+# Bootstrap
+gem 'bootstrap-sass'
+gem 'bootstrap-will_paginate'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

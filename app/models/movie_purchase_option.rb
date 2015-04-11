@@ -11,6 +11,9 @@ class MoviePurchaseOption < ActiveRecord::Base
 # Callbacks
   before_validation :set_price
 
+# Method delegations (Law of Demeter)
+  delegate :quality, to: :purchase_option
+
   private
 
   def set_price
