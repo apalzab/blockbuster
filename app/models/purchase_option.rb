@@ -14,6 +14,7 @@ class PurchaseOption < ActiveRecord::Base
   private
 
   def parameterize_quality
+    return unless quality # for testing purposes
     self.quality = self.quality.parameterize
   end
 
