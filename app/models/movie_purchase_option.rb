@@ -7,4 +7,13 @@ class MoviePurchaseOption < ActiveRecord::Base
 
 # Validations
   validates_presence_of :price
+
+# Callbacks
+  before_validation :set_price
+
+  private
+
+  def set_price
+    self.price = self.purchase_option.price
+  end
 end
