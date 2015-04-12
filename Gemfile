@@ -53,8 +53,11 @@ gem 'bootstrap-will_paginate'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-group :development, :test do
+group :development do
   gem 'sqlite3'
+end
+
+group :development, :test do
   gem 'spring'
   gem 'better_errors'
   gem 'binding_of_caller'
