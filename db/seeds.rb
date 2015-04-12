@@ -1,7 +1,7 @@
 p1 = PurchaseOption.create(quality: 'hd', price: 10)
 p2 = PurchaseOption.create(quality: 'sd', price: 5)
 
-1000.times { 
+300.times { 
   movie = Movie.create(title: Faker::Company.name, plot: Faker::Lorem.paragraph(6))
   mpo = MoviePurchaseOption.create(movie_id: movie.id, purchase_option_id: p1.id, active: true)
   mpo = MoviePurchaseOption.create(movie_id: movie.id, purchase_option_id: p2.id, active: true)
@@ -35,7 +35,7 @@ p2 = PurchaseOption.create(quality: 'sd', price: 5)
 # # mpo6 = MoviePurchaseOption.create(movie_id: movie3.id, purchase_option_id: p6)
 
 # # # User
-user = User.create(nickname: 'bender', email: 'eamil@example.com', password: 'password', password_confirmation: 'password')
+user = User.create(nickname: 'bender', email: 'email@example.com', password: 'password', password_confirmation: 'password')
 
 # # # Purchase
 # # purchase = Purchase.create(movie_purchase_option_id: mpo1.id, user_id: user1.id)
