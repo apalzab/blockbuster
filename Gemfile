@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.2.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 
@@ -66,8 +68,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'capybara', '~> 2.2.1'
-  # gem 'poltergeist'
-  # gem "capybara-webkit"
   gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'launchy'
