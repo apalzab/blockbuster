@@ -2,12 +2,14 @@
   <section class="movie">
     <header><h1><%= @movie.title %></h1></header>
     <p><%= @movie.plot %></p>
-    <% if @movie_purchase_options %>
+    <% if current_user && @movie_purchase_options %>
       <div class="purchase-options">
         <div class="row">
           <%= render @movie_purchase_options.active %>
         </div>
       </div>
+    <% else %>
+      <%= link_to "You must log in to make a purchase", new_user_session_path, class: 'btn btn-info' %>
     <% end %>
   </section>
 </div>
