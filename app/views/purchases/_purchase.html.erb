@@ -1,3 +1,6 @@
-<%= purchase.movie.title %>
-<%= l(purchase.created_at, format: :short) %>
-<%= number_to_currency(purchase.price, :unit => "€") %>
+<tr>
+  <td><%= purchase.movie.title %></td>
+  <td><%= l(purchase.created_at, format: :short) %></td>
+  <td><%= purchase.quality.upcase %></td>
+  <td><%= number_to_currency(purchase.price, :unit => "€") %></td>
+</tr>
