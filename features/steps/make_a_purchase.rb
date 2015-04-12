@@ -21,11 +21,11 @@ class Spinach::Features::MakeAPurchase < Spinach::FeatureSteps
   end
 
   step 'I click purchase' do
-    page.execute_script("$('.purchase').first().click();")
+    page.execute_script('$(".btn").first().click();')
   end
 
   step 'I should go to purchases path' do
-    sleep 3
+    sleep 5
     current_path.should == purchases_path
   end
 end
