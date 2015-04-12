@@ -1,6 +1,6 @@
 class Spinach::Features::SeeMovies < Spinach::FeatureSteps
   step 'I do not exist as user' do
-    user = FactoryGirl.create(:user) # it's not registered
+    user = FactoryGirl.build(:user)
   end
 
   step 'I go to the root path' do

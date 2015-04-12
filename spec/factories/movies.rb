@@ -3,5 +3,4 @@ FactoryGirl.define do
     title { Faker::Name.title }
     plot { Faker::Lorem.sentence(3) }
   end
-
 end
