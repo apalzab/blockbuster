@@ -1,11 +1,18 @@
-<div class="page-header">
-  <h1>Movies</h1>
+<div class="container">
+  <div class="page-header">
+    <h1>Movies</h1>
+  </div>
+
+  <div id="movies" class="movies">
+    <div class="row">
+      <%= render @movies %>
+      
+    </div>
+  </div>
+   
+  <div id="infinite-scrolling">
+    <%= will_paginate %>
+  </div>
+
 </div>
  
-<div id="movies">
-  <%= render @movies %>
-</div>
- 
-<div id="infinite-scrolling">
-  <%= will_paginate %>
-</div>

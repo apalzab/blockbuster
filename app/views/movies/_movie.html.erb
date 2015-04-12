@@ -1,5 +1,5 @@
-<article class="movie">
-  <h3><%= movie.id %>. <%= movie.title %></h3>
+<article class="movie col-md-4 col-sm-6 col-xs-12">
+  <h3><%= movie.title %></h3>
   <p><%= movie.plot %></p>
-  <%= link_to "Movie information", movie %>
+  <%= link_to "Movie information", movie, class: 'btn btn-info' %>
 </article>
