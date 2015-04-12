@@ -8,6 +8,6 @@ require 'spinach/capybara'
 
 require 'database_cleaner'
 DatabaseCleaner.strategy = :truncation
-# Spinach.hooks.before_scenario{ DatabaseCleaner.clean }
+Spinach.hooks.before_scenario{ DatabaseCleaner.clean }
 
 Capybara.default_driver = :selenium 
