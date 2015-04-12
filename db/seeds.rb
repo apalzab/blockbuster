@@ -16,8 +16,8 @@ p2 = PurchaseOption.create(quality: 'sd', price: 5)
 # p6 = PurchaseOption.create(quality: 'sd', price: 20)
 
 # # MoviePurchaseOption
-mpo1 = MoviePurchaseOption.create(movie_id: movie1.id, purchase_option_id: p1.id)
-# mpo2 = MoviePurchaseOption.create(movie_id: movie1.id, purchase_option_id: p2.id)
+mpo1 = MoviePurchaseOption.create(movie_id: movie1.id, purchase_option_id: p1.id, active: true)
+mpo2 = MoviePurchaseOption.create(movie_id: movie1.id, purchase_option_id: p2.id, active: true)
 
 # mpo3 = MoviePurchaseOption.create(movie_id: movie2.id, purchase_option_id: p3)
 # mpo4 = MoviePurchaseOption.create(movie_id: movie2.id, purchase_option_id: p4)
@@ -26,7 +26,7 @@ mpo1 = MoviePurchaseOption.create(movie_id: movie1.id, purchase_option_id: p1.id
 # mpo6 = MoviePurchaseOption.create(movie_id: movie3.id, purchase_option_id: p6)
 
 # # User
-# user1 = User.create(nickname: 'bender')
+user = User.create(nickname: 'bender', email: 'apalzab@gmail.com', password: 'password', password_confirmation: 'password')
 
 # # Purchase
 # purchase = Purchase.create(movie_purchase_option_id: mpo1.id, user_id: user1.id)
