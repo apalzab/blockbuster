@@ -15,5 +15,4 @@ RSpec.describe Movie, :type => :model do
     movie = create(:movie)
     expect(movie).to be_valid
   end
-
 end

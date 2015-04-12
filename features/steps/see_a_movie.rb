@@ -5,10 +5,8 @@ class Spinach::Features::SeeAMovie < Spinach::FeatureSteps
 
   step 'I click one of see movie buttons' do
     within("#movies") do
-      # find('a').first.click
       click_on('Movie information')
     end
-
   end
 
   step 'I should see movie details' do
