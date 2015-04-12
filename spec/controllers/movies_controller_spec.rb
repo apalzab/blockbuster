@@ -4,7 +4,7 @@ RSpec.describe MoviesController, type: :controller do
 
   describe 'GET #index' do
     it "populates an array of movies" do
-      movies = Movie.all
+      movies = Movie.all.limit(15) # 15 is the elements
       get :index
       expect(assigns(:movies)).to match_array(movies)
     end

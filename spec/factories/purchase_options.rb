@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :purchase_option do
-    price 2.99
+    price { Faker::Commerce.price }
     quality "hd"
   end
 

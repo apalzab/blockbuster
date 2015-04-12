@@ -17,7 +17,7 @@ p2 = PurchaseOption.create(quality: 'sd', price: 5)
 
 # # MoviePurchaseOption
 mpo1 = MoviePurchaseOption.create(movie_id: movie1.id, purchase_option_id: p1.id)
-mpo2 = MoviePurchaseOption.create(movie_id: movie1.id, purchase_option_id: p2.id)
+# mpo2 = MoviePurchaseOption.create(movie_id: movie1.id, purchase_option_id: p2.id)
 
 # mpo3 = MoviePurchaseOption.create(movie_id: movie2.id, purchase_option_id: p3)
 # mpo4 = MoviePurchaseOption.create(movie_id: movie2.id, purchase_option_id: p4)

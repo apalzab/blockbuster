@@ -8,7 +8,7 @@ FactoryGirl.define do
 
   factory :confirmed_user, parent: :user do
     after(:create) do |user|
-      user.purchases.create(attributes_for(:purchase))
+      user.purchases << create(:purchase, user_id: user.id)
     end
   end
 end

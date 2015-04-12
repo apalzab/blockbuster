@@ -7,6 +7,8 @@ RSpec.describe Purchase, :type => :model do
   it { should belong_to(:user) }
 
 # Validations
+  it { should validate_presence_of :user }
+  it { should validate_presence_of :movie_purchase_option }
 
 # Factories
   it "has a valid factory" do
