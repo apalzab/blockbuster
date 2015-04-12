@@ -1,10 +1,12 @@
 source 'https://rubygems.org'
 
+ruby '2.1.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
+# Use Postgre
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -50,6 +52,10 @@ gem 'bootstrap-will_paginate'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+group :development do
+  gem 'sqlite3'
+end
 
 group :development, :test do
   gem 'spring'
