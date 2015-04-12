@@ -5,4 +5,16 @@
   a {
     color: black;
   }
+  .purchase-options {
+    .option {
+      text-align: center;
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          display: inline;
+        }
+      }
+    }
+  }
 }
