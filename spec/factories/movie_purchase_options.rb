@@ -9,4 +9,8 @@ FactoryGirl.define do
     end
   end
 
+  factory :inactive_movie_purchase_option, parent: :movie_purchase_option do
+    active false
+  end
+
 end

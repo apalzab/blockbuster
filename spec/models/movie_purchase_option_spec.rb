@@ -15,4 +15,11 @@ RSpec.describe MoviePurchaseOption, :type => :model do
     movie_purchase_option = create(:movie_purchase_option)
     expect(movie_purchase_option).to be_valid
   end
+
+# Scopes
+  it "excludes inactive movie_purchase_options" do
+    active_mpo = create(:movie_purchase_option)
+    inactive_mpo = create(:inactive_movie_purchase_option)
+    MoviePurchaseOption.active.should_not include(inactive_mpo)
+  end
 end

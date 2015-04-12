@@ -14,6 +14,9 @@ class MoviePurchaseOption < ActiveRecord::Base
 # Method delegations (Law of Demeter)
   delegate :quality, to: :purchase_option
 
+# Scopes
+  scope :active, -> { where(active: true) }
+
   private
 
   def set_price
