@@ -1,0 +1,4 @@
+<%= form_for Purchase.new, remote: true do |f| %>
+  <%= f.hidden_field :movie_purchase_option_id, value: movie_purchase_option.id %>
+  <%= f.submit "Buy", class: 'purchase' %>
+<% end %>

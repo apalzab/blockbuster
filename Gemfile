@@ -41,6 +41,13 @@ gem 'responders'
 # Friendly ids
 gem 'friendly_id', '~> 5.1.0'
 
+# For page pagination
+gem 'will_paginate'
+
+# Bootstrap
+gem 'bootstrap-sass'
+gem 'bootstrap-will_paginate'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -52,6 +59,8 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
   gem 'capybara', '~> 2.2.1'
+  # gem 'poltergeist'
+  # gem "capybara-webkit"
   gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'launchy'

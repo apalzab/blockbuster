@@ -1,0 +1,11 @@
+<div class="purchase_option">
+  <ul>
+    <li>Quality: <%= movie_purchase_option.quality %></li>
+    <li>Price: <%= movie_purchase_option.price %></li>
+  </ul>
+  <% if current_user %>
+    <%= render 'purchases/form', movie_purchase_option: movie_purchase_option %>
+  <% else %>
+    <%= link_to "You must log in to make a purchase", new_user_session_path %>
+  <% end %>
+</div>

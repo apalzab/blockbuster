@@ -19,6 +19,7 @@ function log_in() {
       window.location.href = '/movies';
     },
     error: function(response) {
+      $('#log_in .errors').html('');
       errors = $.parseJSON(response.responseText).error;
       $('#log_in .errors').append('<p>' + errors + '</p>');
     }
