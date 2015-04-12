@@ -48,6 +48,9 @@ gem 'will_paginate'
 gem 'bootstrap-sass'
 gem 'bootstrap-will_paginate'
 
+# For fake data generation
+gem 'faker'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -70,6 +73,5 @@ group :development, :test do
   gem 'launchy'
   gem 'selenium-webdriver'
   gem 'meta_request'
-  gem 'faker'
 end
 
