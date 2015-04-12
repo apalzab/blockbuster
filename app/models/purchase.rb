@@ -11,6 +11,7 @@ class Purchase < ActiveRecord::Base
 # Method delegations (Law of Demeter)
   delegate :movie, to: :movie_purchase_option
   delegate :price, to: :movie_purchase_option
+  delegate :quality, to: :movie_purchase_option
   delegate :active, to: :movie_purchase_option
 
   private

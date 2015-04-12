@@ -1,6 +1,13 @@
-<section>
-  <h1>Movie Description</h1>
-  <p><%= @movie.plot %></p>
-  <%= render @movie_purchase_options.active %>
-  <%= link_to "Back to movies", movies_path %>
-</section>
+<div class="container">
+  <section class="movie">
+    <header><h1><%= @movie.title %></h1></header>
+    <p><%= @movie.plot %></p>
+    <% if @movie_purchase_options %>
+      <div class="purchase-options">
+        <div class="row">
+          <%= render @movie_purchase_options.active %>
+        </div>
+      </div>
+    <% end %>
+  </section>
+</div>

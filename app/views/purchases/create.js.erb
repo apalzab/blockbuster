@@ -1,5 +1,5 @@
 <% if @purchase.persisted? %>
   window.location.href = '<%= purchases_path %>';
 <% else %>
-  $('html').append('<p class="error"> <%= @purchase.errors.full_messages.join(', ') %> Something went wrong, please try again.</p>');
+  $('body .movie').append('<p class="errors"> <%= @purchase.errors.full_messages.join(', ') %></p>');
 <% end %>

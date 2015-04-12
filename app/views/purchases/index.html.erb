@@ -1,3 +1,25 @@
-<section>
-  <%= render @purchases %>
-</section>
+<div class="container">
+  <section class="purchases">
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">
+        <header>
+          <h3><%= current_user.nickname.titleize %> Purchases</h3>
+        </header>
+      </div>
+      
+
+      <!-- Table -->
+      <table class="table">
+        <tr>
+          <td><strong>Movie Title</strong></td>
+          <td><strong>Purchased Date</strong></td>
+          <td><strong>Quality</strong></td>
+          <td><strong>Price</strong></td>
+        </tr>
+        <%= render @purchases %>
+      </table>
+    </div>
+  </section>
+</div>
+

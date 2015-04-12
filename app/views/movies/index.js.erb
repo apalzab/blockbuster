@@ -1,4 +1,4 @@
-$('#movies').append('<%= j render @movies %>');
+$('#movies').append('<%  @movies.each_slice(3).each do |row_of_movies| %> <div class="row"> <% row_of_movies.each do |movie| %> <%= j render movie %> <% end %> </div> <% end %> ');
 <% if @movies.next_page %>
   $('.pagination').replaceWith('<%= j will_paginate @movies %>');
 <% else %>

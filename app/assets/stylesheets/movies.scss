@@ -1,3 +1,20 @@
-// Place all the styles related to the movies controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// .pagination {
+//   display: none;
+// }
+.movie {
+  a {
+    color: black;
+  }
+  .purchase-options {
+    .option {
+      text-align: center;
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          display: inline;
+        }
+      }
+    }
+  }
+}

@@ -1,11 +1,21 @@
-<div class="page-header">
-  <h1>Movies</h1>
+<div class="container">
+  <div class="page-header">
+    <header><h1>Movies</h1></header>
+  </div>
+
+  <div id="movies" class="movies">
+    <% @movies.each_slice(3).each do |row_of_movies| %>
+      <div class="row">
+        <% row_of_movies.each do |movie| %>
+          <%= render movie %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+   
+  <div id="infinite-scrolling">
+    <%= will_paginate %>
+  </div>
+
 </div>
  
-<div id="movies">
-  <%= render @movies %>
-</div>
- 
-<div id="infinite-scrolling">
-  <%= will_paginate %>
-</div>
