@@ -1,4 +1,4 @@
-200.times { Movie.create(title: 'The Lord of the rings', plot: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid ei reliquisti, nisi te, quoquo modo loqueretur, intellegere, quid diceret? Iis igitur est difficilius satis facere, qui se Latina scripta dicunt contemnere. Qui ita affectus, beatum esse numquam probabis; Nam Pyrrho, Aristo, Erillus iam diu abiecti. Quid enim est a Chrysippo praetermissum in Stoicis? An vero, inquit, quisquam potest probare, quod perceptfum, quod. Duo Reges: constructio interrete.') }
+200.times { Movie.create(title: Faker::Company.name, plot: Faker::Lorem.paragraph(6)) }
 
 # Movie
 # movie1 = Movie.create(title: 'The Lord of the rings', plot: 'sbjhdsjhjdsjdsl')
